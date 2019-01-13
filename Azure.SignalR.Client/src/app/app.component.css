@@ -1,0 +1,15 @@
+.chat-output{
+    width: 50%;
+    float: left;
+    overflow-y: auto;
+}
+
+.active-groups{
+    width: 20%;
+    float: right;
+}
+
+.chat-top-container{
+    height: 300px;
+    width: 100%;
+}

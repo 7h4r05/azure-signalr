@@ -1,0 +1,15 @@
+<div>
+  <input type="text" [(ngModel)]="groupToJoin" placeholder="type group to join" /><button (click)="join()">join</button>
+</div>
+<div>
+  Joined groups:  <span *ngFor="let group of groups; let last=last">{{group}}<span *ngIf="!last">,</span></span>
+</div>
+<div>
+  <input type="text" [(ngModel)]="message" placeholder="type message" /><input type="text" [(ngModel)]="targetGroup" placeholder="type target group" /> <button (click)="send()">message</button>
+</div>
+
+<ul>
+  <li *ngFor="let t of output">
+   {{t}} 
+  </li>
+</ul>
